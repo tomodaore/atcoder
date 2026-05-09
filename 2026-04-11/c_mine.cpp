@@ -1,3 +1,9 @@
+/*
+貪欲法で数えたがそれじゃうまくいかない
+bit全探索でやると
+
+*/
+
 #include <iostream>
 using namespace std;
 
