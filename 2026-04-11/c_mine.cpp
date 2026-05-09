@@ -2,6 +2,8 @@
 貪欲法で数えたがそれじゃうまくいかない
 bit全探索でやると
 a
+競プロのアルゴリズムがいろいろあるサイト
+https://drken1215.hatenablog.com/
 */
 
 #include <iostream>
