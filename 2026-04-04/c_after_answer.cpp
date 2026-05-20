@@ -1,10 +1,15 @@
+/*
+時間計測は答えのアルゴリズムの差を見るため
+*/
 #include <iostream>
 #include <vector>
 #include <string>
 #include <set>
+#include <chrono>
 using namespace std;
 
 int main() {
+    auto start = chrono::high_resolution_clock::now();
 
     int N;
     cin >> N;
@@ -55,6 +60,11 @@ int main() {
 
         cout << (flag ? "Yes" : "No") << '\n';
     }
+    auto end =  chrono::high_resolution_clock::now();
+
+    auto diff = chrono::duration_cast<chrono::microseconds>(end - start);
+
+    cout << diff.count() << " ms\n";
 
     return 0;
 }
